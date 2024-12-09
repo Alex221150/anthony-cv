@@ -1,0 +1,179 @@
+/************************* TOUS LES MEDIAS *************************/
+body {
+    background-color: #e3f2fd;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-primary {
+    background-color: #0d47a1 !important;
+}
+
+.container-fluid .heading {
+    padding-top: 4rem;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    color: #9933cc;
+    font-size: 45px;
+    border-bottom: 1px solid;
+    text-align: center;
+    padding-top: 4rem;
+    text-transform: uppercase;
+}
+
+/*** EXPERIENCES ET FORMATIONS ***/
+.annee {
+    color: green;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#Experience,
+#Formations {
+    font-style: italic;
+    padding: 0.5em;
+    color: #0d47a1;
+}
+
+#Experience p {
+    text-align: center;
+}
+
+#Formations {
+    padding: 2em;
+}
+
+.container {
+    height: 100vh;
+}
+
+/*** COMPETENCE ***/
+#Compétences .progress {
+    height: 50px;
+    margin-top: 30px;
+    background-color: #e57373;
+}
+
+#Compétences .progress-bar {
+    font-size: 1.9em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000;
+    font-style: italic;
+}
+
+/*** Langues ***/
+#langage-maitrisé li,
+#Centre-intéret li,
+#Qualité li {
+    color: #0d47a1;
+    list-style: none;
+    padding: 1.2em;
+}
+
+/*** Contact ***/
+#Contact p {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#Contact button {
+    margin-top: 15px;
+}
+
+#Contact label {
+    font-weight: bold;
+}
+
+/************************* SMARTPHONE ET TABLETTE *************************/
+@media (max-width:991.98px) {
+
+    #Moi .laptop,
+    #navbar img {
+        display: none;
+    }
+
+
+    #Moi .heading {
+        visibility: hidden;
+    }
+
+    #Moi .mobile {
+        background-color: #0d47a1 !important;
+        color: white;
+        text-align: center;
+        height: 100vh;
+    }
+
+    #Moi .mobile img {
+        width: 80%;
+        border: 8px solid;
+    }
+
+    #Moi .mobile a,
+    #Moi .mobile h3 {
+        text-transform: uppercase;
+    }
+}
+
+/************************* PC & TV *************************/
+@media (min-width:992px) {
+    #Moi .mobile {
+        display: none;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        width: 17em;
+        height: 100vh;
+    }
+
+    #navbar .navbar-brand img {
+        border: 8px solid;
+    }
+
+    #navbar .navbar-brand {
+        padding: 30px;
+    }
+
+    #navbar .navbar-collapse .navbar-nav {
+        display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    section {
+        margin-left: 30%;
+    }
+
+    #Moi .laptop {
+        padding: 10%;
+        text-align: center;
+    }
+
+    #Moi .laptop .heading {
+        font-size: 4em;
+        color: #9933cc;
+        border-bottom: 1px solid;
+    }
+
+    #Moi .laptop h3 {
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+
+    #Moi .laptop h4 {
+        font-size: 30px;
+    }
+
+    #Moi .laptop p {
+        font-size: 30px;
+    }
+}
